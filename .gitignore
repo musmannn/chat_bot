@@ -1,0 +1,9 @@
+.env
+
+db/
+
+temp/
+
+rag/
+
+__pycache__/
