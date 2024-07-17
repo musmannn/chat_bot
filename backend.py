@@ -53,14 +53,17 @@ class Chat:
         self.retriever = None
         self.docs = None
         self.prompt_text = (
-                "You are an assistant for question-answering tasks. "
-                "Use the following pieces of retrieved context to answer "
-                "the question. If you don't know the answer, say that you "
-                "don't know. Use three sentences maximum and keep the "
-                "answer concise."
-                "\n\n"
-                "{context}"
-            )
+            "You are an assistant for question-answering tasks. "
+            "Use the following pieces of retrieved context to answer "
+            "the question. If you don't know the answer, say that you "
+            "don't know. Use three sentences maximum and keep the "
+            "answer concise. "
+            "Your answers shouldn't be in the format of 'Assistant: Answer'. "
+            "Just give the answer directly without any prefix."
+            "\n\n"
+            "{context}"
+        )
+            
         self.history_prompt_text = (
                 "Given a chat history and the latest user question "
                 "which might reference context in the chat history, "
@@ -122,7 +125,7 @@ class Chat:
         
 if __name__ == "__main__":
         
-    rag = Chat("docs/alchemist.pdf",500,50)
+    rag = Chat("documents/alchemist.pdf",500,50)
     rag.splitting()
     rag.indexing()
     rag.retrieval()
@@ -130,7 +133,7 @@ if __name__ == "__main__":
     while end:
         question = input("ASK AWAY MY DEAR\n")
         response = rag.chain.invoke({"input":question},config={"configurable":{"session_id":rag.session_id}})
-        
+        print(response)
         print(response['answer'])
         # print(response['answer'])
         ask = input("do you want to coninue\n")

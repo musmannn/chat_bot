@@ -6,4 +6,9 @@ temp/
 
 rag/
 
+documents/
+
 __pycache__/
+
+
+gradio_cached_examples/

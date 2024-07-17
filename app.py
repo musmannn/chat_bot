@@ -1,65 +1,82 @@
-
-import os 
-import streamlit as st
+import gradio as gr
 from backend import Chat
 
-
-def generate_response(prompt,rag):
-    response = rag.chain.invoke({"input":prompt},config={"configurable":{"session_id":rag.session_id}})
-    print(response)
-    return response['answer']
-def file_handle(file_path):
-    global rag
-    uploaded_file = file_path
-    print("File changed")
-    if not os.path.exists("temp"):
-        os.makedirs("temp")
-    file_path = os.path.join("temp", uploaded_file.name)
-    with open(file_path, "wb") as f:
-        f.write(uploaded_file.getbuffer())
-    
-    print("Creating object")
-    
-    rag = Chat(file_path, 500, 50)
-    rag.splitting()
-    rag.indexing()
-    rag.retrieval()
-    return rag
+"""
+Todo:
+    Add the streaming functionality
+    Add the status thing like it should know what is happening
     
     
 
-
-if 'last_file' not in st.session_state:
-    st.session_state['last_file'] = None
-
-if 'rag' not in st.session_state:
-    st.session_state['rag'] = None
-st.title("ChatGPT-like clone")
-
-# client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-file_src = st.file_uploader("Upload file",['pdf'],False)
-if file_src and st.session_state['last_file'] != file_src:
-    print("Doing it again")
-    print(f"last_file  == {st.session_state['last_file']} and file_src == {file_src}")
-    st.session_state['last_file'] = file_src
-    st.session_state['rag'] =  file_handle(file_src)
+"""
 
 
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
-
-if prompt := st.chat_input("What is up?"):
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(prompt)
-
-    with st.chat_message("assistant"):
+class App:
+    def __init__(self,):
+        self.current_file = None
+        self.modal = None
+        self.cur_file = None
+        self.ui = gr.ChatInterface(
+            self.generate_data,
+            multimodal=True,
+            title="InsightBot",
+            textbox=gr.MultimodalTextbox(file_types=["pdf"],file_count="single",interactive=True),
+            description="Get Insights on your document using our  bot",
+            theme="soft",
+            retry_btn=None,
+            undo_btn="Delete Previous",
+            clear_btn="Clear",
+            
+        )
+    def generate_data(self,input_data,history):
+        print(f"Current File:{self.current_file}\n\n cur_file:{self.cur_file}")
         
-        response = generate_response(prompt,st.session_state['rag'])
-        st.write(response)
-    st.session_state.messages.append({"role": "assistant", "content": response})
+        print(input_data)
+        
+        print(history)
+        if input_data.files:
+            text = input_data.text
+            source_file = input_data.files[0]
+            self.cur_file = source_file.url
+            if self.current_file != self.cur_file:
+                self.current_file = self.cur_file
+                self.modal = Chat(self.cur_file,500,50)
+                self.modal.splitting()
+                self.modal.indexing()
+                self.modal.retrieval()
+                response = self.modal.chain.invoke({"input":text},config={"configurable":{"session_id":self.modal.session_id}})['answer']
+                answer = ""
+                for char in response:
+                    answer += char
+                    yield answer
+                    
+            else:
+                print("Same file entered")
+                response = self.modal.chain.invoke({"input":text},config={"configurable":{"session_id":self.modal.session_id}})['answer']
+                answer = ""
+                for char in response:
+                    answer += char
+                    yield answer
+        elif self.modal:
+            print("No file entered. Using previous file")
+            text = input_data.text
+            response = self.modal.chain.invoke({"input":text},config={"configurable":{"session_id":self.modal.session_id}})['answer']
+            answer = ""
+            for char in response:
+                answer += char
+                yield answer
+        else:
+            response =  "You haven't Uploaded any source"
+            answer = ""
+            for char in response:
+                answer += char
+                yield answer
+
+
+
+
+if __name__ == "__main__":
+    gui  = App()
+    gui.ui.launch()
+    
 
