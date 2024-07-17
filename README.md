@@ -1,10 +1,10 @@
 ---
-title: Chatbot
-emoji: 😻
-colorFrom: blue
-colorTo: yellow
-sdk: streamlit
-sdk_version: 1.36.0
+title: Chat Bot
+emoji: 💬
+colorFrom: yellow
+colorTo: purple
+sdk: gradio
+sdk_version: 4.36.1
 app_file: app.py
 pinned: false
 license: mit
