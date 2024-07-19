@@ -12,3 +12,5 @@ __pycache__/
 
 
 gradio_cached_examples/
+
+learn.py
