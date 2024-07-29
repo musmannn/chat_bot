@@ -80,7 +80,7 @@ class Chat:
             self.store[session_id] = InMemoryChatMessageHistory()
         return self.store[session_id]
     def run(self,query,username="Usman"):
-        print("running this again")
+        
         
         # self.chat_model = ChatHuggingFace(llm=self.llm,max_new_tokens=1000)
         
@@ -89,10 +89,12 @@ class Chat:
             if self.file_path != self.current_file:
                 print("RETURNED FROM FILE 1")
                 response = self.source_chain.invoke({"input":query,'username':username})
+                print(f"response returned is {response['context']}")
                 return response['answer']
             else:
                 print("RETURNED FROM FILE 2")
                 response = self.source_chain.invoke({"input":query,'username':username})
+                print(f"response returned is {response['context']}")
                 return response['answer']
         else:
             # print(f"File_Uplaoded:{file_uploaded}")

@@ -19,7 +19,7 @@ def create_retriever(source_file,method,embedding="all-MiniLM-L6-v2",persist_dir
     docs = SemanticChunker(embedding, breakpoint_threshold_type="percentile").split_documents(loader)
     # docs = RecursiveCharacterTextSplitter(chunk_size=chunk_size,chunk_overlap=chunk_overlap).split_documents(loader)
     vectorstore = Chroma.from_documents(documents=docs,embedding=embedding,persist_directory=persist_dir)
-    retriever = vectorstore.as_retriever(search_type="similarity",search_kwargs={'k':3})
+    retriever = vectorstore.as_retriever(search_type="similarity",search_kwargs={'k':6})
     return {'retriever':retriever,'vectordb':vectorstore,'path':persist_dir}
 
 def file_worker(file_path):

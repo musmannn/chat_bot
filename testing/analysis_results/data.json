@@ -1,0 +1,322 @@
+[
+    {
+        "model": "openai",
+        "prompt_type": "Summarization",
+        "system_text": "Summarize the following text in a concise and clear manner.",
+        "examples": "Original: 'The quick brown fox jumps over the lazy dog. This pangram is often used to test typewriters and keyboards. It contains all the letters of the English alphabet.'\nSummary: 'A pangram containing all English letters is often used to test keyboards.'",
+        "user_input": "Summarize the following article about climate change and its effects on global weather patterns.",
+        "response": "Climate change is causing disruptions in global weather patterns, leading to extreme weather events such as heatwaves, droughts, and heavy rainfall. These changes are impacting agriculture, ecosystems, and human health worldwide.",
+        "time": 2.267711877822876,
+        "tokens_used": 150
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Summarization",
+        "system_text": "Summarize the following text in a concise and clear manner.",
+        "examples": "Original: 'The quick brown fox jumps over the lazy dog. This pangram is often used to test typewriters and keyboards. It contains all the letters of the English alphabet.'\nSummary: 'A pangram containing all English letters is often used to test keyboards.'",
+        "user_input": "Provide a brief summary of the main points in the text about the history of the internet.",
+        "response": "The text discusses the origins of the internet, tracing its development from a U.S. military project called ARPANET in the 1960s. It highlights how ARPANET evolved into the modern internet we use today, connecting computers worldwide. The text emphasizes the internet's growth and significance in enabling global communication and access to information.",
+        "time": 1.5941762924194336,
+        "tokens_used": 178
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Summarization",
+        "system_text": "Provide a brief summary of the main points in the text below.",
+        "examples": "Original: 'The global climate is changing rapidly, resulting in severe weather patterns and rising sea levels. Scientists are urging immediate action to mitigate these effects.'\nSummary: 'Rapid climate change causes severe weather and rising sea levels; urgent action needed.'",
+        "user_input": "Summarize the following article about climate change and its effects on global weather patterns.",
+        "response": "Climate change is leading to more frequent and severe weather events worldwide, such as heatwaves, hurricanes, and heavy rainfall. These extreme weather patterns are causing significant damage to ecosystems, infrastructure, and human health. The increasing temperatures are also contributing to rising sea levels, which pose a threat to coastal areas. Urgent action is needed to address climate change and mitigate its impacts on global weather patterns.",
+        "time": 1.5642240047454834,
+        "tokens_used": 183
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Summarization",
+        "system_text": "Provide a brief summary of the main points in the text below.",
+        "examples": "Original: 'The global climate is changing rapidly, resulting in severe weather patterns and rising sea levels. Scientists are urging immediate action to mitigate these effects.'\nSummary: 'Rapid climate change causes severe weather and rising sea levels; urgent action needed.'",
+        "user_input": "Provide a brief summary of the main points in the text about the history of the internet.",
+        "response": "The text discusses the history of the internet, starting with its origins in the 1960s as a military project called ARPANET. It highlights the development of key technologies such as TCP/IP and the World Wide Web. The text also mentions how the internet has evolved from a tool for military communication to a global network connecting people worldwide, revolutionizing communication and information-sharing.",
+        "time": 2.137542724609375,
+        "tokens_used": 181
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Classification",
+        "system_text": "Classify the following text into one of the predefined categories.",
+        "examples": "Text: 'The stock market saw a significant rise today as tech companies reported strong earnings.'\nCategory: 'Finance'",
+        "user_input": "Classify the following text into one of the predefined categories: 'Technology', 'Finance', 'Health', or 'Entertainment'.",
+        "response": "Text: 'The latest iPhone model was revealed today, featuring a larger screen and improved camera technology.'\n\nCategory: 'Technology'",
+        "time": 1.081502914428711,
+        "tokens_used": 112
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Classification",
+        "system_text": "Classify the following text into one of the predefined categories.",
+        "examples": "Text: 'The stock market saw a significant rise today as tech companies reported strong earnings.'\nCategory: 'Finance'",
+        "user_input": "Determine the category of the provided text based on its content about the benefits of a balanced diet.",
+        "response": "Health",
+        "time": 1.1641316413879395,
+        "tokens_used": 82
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Classification",
+        "system_text": "Determine the category of the provided text based on its content.",
+        "examples": "Text: 'A new study shows that regular exercise can improve mental health and reduce symptoms of depression.'\nCategory: 'Health'",
+        "user_input": "Classify the following text into one of the predefined categories: 'Technology', 'Finance', 'Health', or 'Entertainment'.",
+        "response": "Text: 'The latest smartphone models are equipped with advanced facial recognition technology for enhanced security.'\n\nCategory: 'Technology'",
+        "time": 1.0073766708374023,
+        "tokens_used": 113
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Classification",
+        "system_text": "Determine the category of the provided text based on its content.",
+        "examples": "Text: 'A new study shows that regular exercise can improve mental health and reduce symptoms of depression.'\nCategory: 'Health'",
+        "user_input": "Determine the category of the provided text based on its content about the benefits of a balanced diet.",
+        "response": "Category: Health",
+        "time": 1.0385055541992188,
+        "tokens_used": 87
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Evaluation",
+        "system_text": "Evaluate the quality of the following text based on clarity, coherence, and relevance.",
+        "examples": "Text: 'The economic growth has been unprecedented, leading to various new opportunities.'\nEvaluation: 'The text is clear and coherent but lacks specific examples to support its claims.'",
+        "user_input": "Evaluate the quality of the following text based on clarity, coherence, and relevance: 'The quick brown fox jumps over the lazy dog, demonstrating the agility of wild animals.'",
+        "response": "Evaluation: The text is clear and coherent, as it effectively conveys the action of a fox jumping over a dog. However, the relevance of the text is questionable as it does not directly relate to the agility of wild animals in general. A more relevant example or explanation could enhance the clarity and coherence of the text.",
+        "time": 1.5135667324066162,
+        "tokens_used": 174
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Evaluation",
+        "system_text": "Evaluate the quality of the following text based on clarity, coherence, and relevance.",
+        "examples": "Text: 'The economic growth has been unprecedented, leading to various new opportunities.'\nEvaluation: 'The text is clear and coherent but lacks specific examples to support its claims.'",
+        "user_input": "Assess the provided text and give feedback on its strengths and weaknesses: 'The new software update includes several performance improvements and bug fixes.'",
+        "response": "The text is clear and concise, providing specific information about the content of the software update. It effectively communicates the main points without unnecessary details. However, it could be improved by including specific examples of the performance improvements and bug fixes to provide more context and relevance to the statement.",
+        "time": 1.3147635459899902,
+        "tokens_used": 158
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Evaluation",
+        "system_text": "Assess the provided text and give feedback on its strengths and weaknesses.",
+        "examples": "Text: 'Renewable energy sources are becoming more popular, but there are still challenges to widespread adoption.'\nFeedback: 'The text is well-structured and relevant, but it could benefit from more detailed analysis of the challenges.'",
+        "user_input": "Evaluate the quality of the following text based on clarity, coherence, and relevance: 'The quick brown fox jumps over the lazy dog, demonstrating the agility of wild animals.'",
+        "response": "Feedback:\nStrengths:\n1. Clarity: The text is clear and easy to understand.\n2. Coherence: The text is coherent in linking the action of the fox jumping over the dog with the agility of wild animals.\n3. Relevance: The text stays focused on the demonstration of agility through the action described.\n\nWeaknesses:\n1. Lack of depth: The text is straightforward and lacks depth or further analysis. It could be improved by providing more context or expanding on the significance of the demonstration.\n2. Limited scope: The text could be more engaging by providing more information or context about why agility in wild animals is being highlighted in this specific example.\n\nOverall, the text is clear and coherent, but it could be enhanced by providing more depth and expanding on the relevance of the demonstration of agility in wild animals.",
+        "time": 2.45084547996521,
+        "tokens_used": 286
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Evaluation",
+        "system_text": "Assess the provided text and give feedback on its strengths and weaknesses.",
+        "examples": "Text: 'Renewable energy sources are becoming more popular, but there are still challenges to widespread adoption.'\nFeedback: 'The text is well-structured and relevant, but it could benefit from more detailed analysis of the challenges.'",
+        "user_input": "Assess the provided text and give feedback on its strengths and weaknesses: 'The new software update includes several performance improvements and bug fixes.'",
+        "response": "Strengths:\n1. The text is clear and concise, delivering the message effectively.\n2. It provides relevant information about the new software update, highlighting its key features.\n3. It communicates a positive aspect of the update, mentioning performance improvements and bug fixes.\n\nWeaknesses:\n1. The text lacks specific details about the performance improvements and bug fixes, which could provide more value to the reader.\n2. It could benefit from elaborating on how these improvements and fixes will enhance the user experience.\n3. Including examples of the improvements or specific bugs fixed could make the text more engaging and informative.\n\nOverall, the text is clear and informative, but it could be strengthened by providing more specific details and examples to showcase the impact of the software update.",
+        "time": 2.6065361499786377,
+        "tokens_used": 263
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Extraction",
+        "system_text": "Extract the key entities mentioned in the text below.",
+        "examples": "Text: 'Microsoft announced a new partnership with OpenAI to develop advanced AI models.'\nEntities: 'Microsoft, OpenAI'",
+        "user_input": "Extract the key entities mentioned in the text about the partnership between Apple and Google to enhance AI technology.",
+        "response": "Entities: 'Apple, Google, AI technology'",
+        "time": 0.9645693302154541,
+        "tokens_used": 91
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Extraction",
+        "system_text": "Extract the key entities mentioned in the text below.",
+        "examples": "Text: 'Microsoft announced a new partnership with OpenAI to develop advanced AI models.'\nEntities: 'Microsoft, OpenAI'",
+        "user_input": "Identify and list the main events described in the passage about the moon landing in 1969.",
+        "response": "Entities: Moon landing, 1969\n",
+        "time": 0.8732943534851074,
+        "tokens_used": 90
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Extraction",
+        "system_text": "Identify and list the main events described in the following passage.",
+        "examples": "Text: 'In 2020, a global pandemic disrupted lives worldwide. Vaccines were developed rapidly and distributed in 2021.'\nEvents: 'Global pandemic in 2020, Vaccine development and distribution in 2021'",
+        "user_input": "Extract the key entities mentioned in the text about the partnership between Apple and Google to enhance AI technology.",
+        "response": "Text: \"Apple and Google announced a partnership to enhance AI technology in their respective digital assistants, Siri and Google Assistant.\"\n\nKey entities:\n1. Apple\n2. Google\n3. Partnership\n4. AI technology\n5. Digital assistants\n6. Siri\n7. Google Assistant",
+        "time": 1.8528296947479248,
+        "tokens_used": 162
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Extraction",
+        "system_text": "Identify and list the main events described in the following passage.",
+        "examples": "Text: 'In 2020, a global pandemic disrupted lives worldwide. Vaccines were developed rapidly and distributed in 2021.'\nEvents: 'Global pandemic in 2020, Vaccine development and distribution in 2021'",
+        "user_input": "Identify and list the main events described in the passage about the moon landing in 1969.",
+        "response": "Text: \"In 1969, Neil Armstrong and Buzz Aldrin became the first humans to set foot on the moon during the Apollo 11 mission.\"\nEvents: \"Neil Armstrong and Buzz Aldrin's moon landing in 1969\"",
+        "time": 1.3726990222930908,
+        "tokens_used": 153
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Translation",
+        "system_text": "Translate the following text into English.",
+        "examples": "Text: 'Bonjour, comment \u00e7a va?'\nTranslation: 'Hello, how are you?'",
+        "user_input": "Translate the following text into English: 'El cielo est\u00e1 despejado y hace buen tiempo.'",
+        "response": "The sky is clear and the weather is good.",
+        "time": 0.8476910591125488,
+        "tokens_used": 83
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Translation",
+        "system_text": "Translate the following text into English.",
+        "examples": "Text: 'Bonjour, comment \u00e7a va?'\nTranslation: 'Hello, how are you?'",
+        "user_input": "Convert the provided text from French to English: 'Les \u00e9l\u00e8ves sont all\u00e9s au mus\u00e9e pour une excursion \u00e9ducative.'",
+        "response": "The students went to the museum for an educational field trip.",
+        "time": 0.9538764953613281,
+        "tokens_used": 91
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Translation",
+        "system_text": "Convert the provided text from French to English.",
+        "examples": "Text: 'Je m'appelle Marie et j'aime lire des livres.'\nTranslation: 'My name is Marie and I like to read books.'",
+        "user_input": "Translate the following text into English: 'El cielo est\u00e1 despejado y hace buen tiempo.'",
+        "response": "The sky is clear and the weather is good.",
+        "time": 0.9275088310241699,
+        "tokens_used": 97
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Translation",
+        "system_text": "Convert the provided text from French to English.",
+        "examples": "Text: 'Je m'appelle Marie et j'aime lire des livres.'\nTranslation: 'My name is Marie and I like to read books.'",
+        "user_input": "Convert the provided text from French to English: 'Les \u00e9l\u00e8ves sont all\u00e9s au mus\u00e9e pour une excursion \u00e9ducative.'",
+        "response": "The students went to the museum for an educational field trip.",
+        "time": 1.2635211944580078,
+        "tokens_used": 105
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Paraphrasing",
+        "system_text": "Rewrite the following text to convey the same meaning in different words.",
+        "examples": "Original: 'The weather today is sunny with a slight chance of rain in the afternoon.'\nParaphrase: 'Today's weather is sunny, but there might be some rain later in the day.'",
+        "user_input": "Rewrite the following text to convey the same meaning in different words: 'The company reported a significant increase in revenue this quarter.'",
+        "response": "The company announced a substantial rise in revenue for this quarter.",
+        "time": 0.669874906539917,
+        "tokens_used": 118
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Paraphrasing",
+        "system_text": "Rewrite the following text to convey the same meaning in different words.",
+        "examples": "Original: 'The weather today is sunny with a slight chance of rain in the afternoon.'\nParaphrase: 'Today's weather is sunny, but there might be some rain later in the day.'",
+        "user_input": "Paraphrase the provided passage to improve clarity and readability: 'Due to unforeseen circumstances, the event has been postponed to a later date.'",
+        "response": "The event has been rescheduled to a later date because of unexpected circumstances.",
+        "time": 1.4066128730773926,
+        "tokens_used": 124
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Paraphrasing",
+        "system_text": "Paraphrase the provided passage to improve clarity and readability.",
+        "examples": "Original: 'The project's success was largely due to the team's dedication and hard work.'\nParaphrase: 'The team\u2019s commitment and effort were key to the project\u2019s success.'",
+        "user_input": "Rewrite the following text to convey the same meaning in different words: 'The company reported a significant increase in revenue this quarter.'",
+        "response": "'This quarter, the company saw a substantial rise in its revenue.'",
+        "time": 0.9839732646942139,
+        "tokens_used": 116
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Paraphrasing",
+        "system_text": "Paraphrase the provided passage to improve clarity and readability.",
+        "examples": "Original: 'The project's success was largely due to the team's dedication and hard work.'\nParaphrase: 'The team\u2019s commitment and effort were key to the project\u2019s success.'",
+        "user_input": "Paraphrase the provided passage to improve clarity and readability: 'Due to unforeseen circumstances, the event has been postponed to a later date.'",
+        "response": "Because of unexpected events, the event has been rescheduled for a later date.",
+        "time": 0.760622501373291,
+        "tokens_used": 121
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Question Answering",
+        "system_text": "Provide a detailed answer to the question based on the given text.",
+        "examples": "Text: 'Albert Einstein developed the theory of relativity, which revolutionized theoretical physics.'\nQuestion: 'Who developed the theory of relativity?'\nAnswer: 'Albert Einstein'",
+        "user_input": "Provide a detailed answer to the question based on the given text: 'What are the main benefits of renewable energy sources?'",
+        "response": "Renewable energy sources offer several key benefits that contribute to a more sustainable and environmentally friendly energy system. These benefits include:\n\n1. Environmental Sustainability: One of the primary advantages of renewable energy sources is their minimal impact on the environment. Unlike fossil fuels, which release harmful greenhouse gases and pollutants into the atmosphere, renewable energy sources such as solar, wind, and hydropower produce little to no emissions during operation, helping to mitigate climate change and reduce air pollution.\n\n2. Energy Security: Renewable energy sources are abundant and widely available, reducing dependence on finite fossil fuel reserves that are subject to geopolitical instability and price fluctuations. By diversifying the energy mix with renewables, countries can enhance their energy security and reduce the risks associated with relying on imported fuels.\n\n3. Economic Benefits: The renewable energy sector has become a significant driver of economic growth, creating jobs, attracting investments, and stimulating innovation. As the costs of renewable technologies continue to decline, they offer a cost-effective alternative to traditional energy sources, ultimately leading to long-term savings for consumers and businesses.\n\n4. Public Health: By displacing fossil fuel combustion, renewable energy sources help improve public health by reducing air pollution and associated health risks. Cleaner air quality resulting from the use of renewables can lead to lower rates of respiratory diseases, cardiovascular problems, and premature deaths, benefiting society as a whole.\n\n5. Energy Independence: Renewable energy sources provide countries with greater energy independence by harnessing local resources to generate electricity and heat. This reduces reliance on imported fuels and enhances energy self-sufficiency, making nations more resilient to supply disruptions and geopolitical tensions.\n\nIn conclusion, the main benefits of renewable energy sources encompass environmental sustainability, energy security, economic growth, public health improvements, and enhanced energy independence. By embracing renewable energy technologies, societies can transition towards a more sustainable energy future while reaping these numerous advantages.",
+        "time": 3.4611728191375732,
+        "tokens_used": 469
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Question Answering",
+        "system_text": "Provide a detailed answer to the question based on the given text.",
+        "examples": "Text: 'Albert Einstein developed the theory of relativity, which revolutionized theoretical physics.'\nQuestion: 'Who developed the theory of relativity?'\nAnswer: 'Albert Einstein'",
+        "user_input": "Answer the question using information from the text below: 'Who was the first person to walk on the moon?'",
+        "response": "The text provided does not contain any information about the first person to walk on the moon.",
+        "time": 0.8400554656982422,
+        "tokens_used": 115
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Question Answering",
+        "system_text": "Answer the question using information from the text below.",
+        "examples": "Text: 'The Amazon rainforest is home to a vast number of species and plays a critical role in regulating the Earth's climate.'\nQuestion: 'What is the importance of the Amazon rainforest?'\nAnswer: 'It is home to many species and helps regulate the Earth's climate.'",
+        "user_input": "Provide a detailed answer to the question based on the given text: 'What are the main benefits of renewable energy sources?'",
+        "response": "The main benefits of renewable energy sources are their sustainability and environmental friendliness. Unlike finite resources like fossil fuels, renewable energy sources such as solar, wind, and hydropower are inexhaustible and can be replenished naturally. This ensures a continuous and reliable supply of energy for the future. Additionally, renewable energy sources produce minimal greenhouse gas emissions, contributing to the mitigation of climate change. By reducing our reliance on fossil fuels, renewable energy helps to improve air quality, protect natural habitats, and decrease our carbon footprint. Furthermore, investing in renewable energy sources can create job opportunities and stimulate economic growth in the green energy sector. Overall, the main benefits of renewable energy sources lie in their sustainable nature, environmental benefits, and positive impact on society and the economy.",
+        "time": 2.1898324489593506,
+        "tokens_used": 270
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Question Answering",
+        "system_text": "Answer the question using information from the text below.",
+        "examples": "Text: 'The Amazon rainforest is home to a vast number of species and plays a critical role in regulating the Earth's climate.'\nQuestion: 'What is the importance of the Amazon rainforest?'\nAnswer: 'It is home to many species and helps regulate the Earth's climate.'",
+        "user_input": "Answer the question using information from the text below: 'Who was the first person to walk on the moon?'",
+        "response": "The first person to walk on the moon was Neil Armstrong.",
+        "time": 1.0037460327148438,
+        "tokens_used": 128
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Sentiment Analysis",
+        "system_text": "Analyze the sentiment of the following text and classify it as positive, negative, or neutral.",
+        "examples": "Text: 'I love the new design of the website! It\u2019s so user-friendly and visually appealing.'\nSentiment: 'Positive'",
+        "user_input": "Analyze the sentiment of the following text and classify it as positive, negative, or neutral: 'I am extremely happy with the service provided by the new internet provider.'",
+        "response": "Sentiment: Positive",
+        "time": 0.66001296043396,
+        "tokens_used": 110
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Sentiment Analysis",
+        "system_text": "Analyze the sentiment of the following text and classify it as positive, negative, or neutral.",
+        "examples": "Text: 'I love the new design of the website! It\u2019s so user-friendly and visually appealing.'\nSentiment: 'Positive'",
+        "user_input": "Determine the overall sentiment expressed in the provided passage: 'The movie was boring and I wouldn't recommend it to anyone.'",
+        "response": "Sentiment: Negative",
+        "time": 0.7901897430419922,
+        "tokens_used": 101
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Sentiment Analysis",
+        "system_text": "Determine the overall sentiment expressed in the provided passage.",
+        "examples": "Text: 'The service at the restaurant was slow and the food was mediocre.'\nSentiment: 'Negative'",
+        "user_input": "Analyze the sentiment of the following text and classify it as positive, negative, or neutral: 'I am extremely happy with the service provided by the new internet provider.'",
+        "response": "Sentiment: Positive",
+        "time": 0.8876070976257324,
+        "tokens_used": 97
+    },
+    {
+        "model": "openai",
+        "prompt_type": "Sentiment Analysis",
+        "system_text": "Determine the overall sentiment expressed in the provided passage.",
+        "examples": "Text: 'The service at the restaurant was slow and the food was mediocre.'\nSentiment: 'Negative'",
+        "user_input": "Determine the overall sentiment expressed in the provided passage: 'The movie was boring and I wouldn't recommend it to anyone.'",
+        "response": "Sentiment: Negative",
+        "time": 1.0216262340545654,
+        "tokens_used": 88
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "How are you",
+        "response": " I'm just a computer program, I don't have the ability to feel emotions or have a physical presence. I'm here to help answer any questions you might have to the best of my ability. How can I assist you today?",
+        "time": 1.0212302207946777,
+        "tokens_used": 51
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "What is your name",
+        "response": " I don't have a name, but you can call me your helpful assistant. I'm here to answer any questions you might have. Feel free to ask me anything!",
+        "time": 0.23933696746826172,
+        "tokens_used": 37
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "recommend me a book given that i have read the following:harry potter, lord of the rings",
+        "response": " Based on your interest in fantasy novels, I'd recommend \"The Wheel of Time\" series by Robert Jordan. This epic high fantasy series is known for its intricate plot, complex characters, and detailed world-building. If you're looking for something similar to Harry Potter and Lord of the Rings, The Wheel of Time should be right up your alley. Additionally, consider checking out \"The Kingkiller Chronicle\" by Patrick Rothfuss or \"A Song of Ice and Fire\" by George R.R. Martin, both of which are popular fantasy series that might appeal to you.",
+        "time": 0.24173545837402344,
+        "tokens_used": 126
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "What is the model running behind this",
+        "response": " I am a text-based artificial intelligence model designed to answer questions. I don't have a physical body or a specific model running behind me. I process text and provide responses based on the information I've been programmed with. My responses are generated using a mix of pre-programmed rules and machine learning algorithms.",
+        "time": 0.24300217628479004,
+        "tokens_used": 67
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "Who is the most famous person on the planet right now?",
+        "response": " Determining the most famous person on the planet is subjective and can vary based on different factors such as industry, geography, and personal preferences. However, some of the most commonly recognized famous people globally include figures like Elon Musk, Jeff Bezos, Greta Thunberg, and Cristiano Ronaldo due to their significant influence and impact in various fields such as technology, climate activism, and sports. Ultimately, the answer to this question can be debated and is open to interpretation.",
+        "time": 0.24806547164916992,
+        "tokens_used": 107
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "Who created you?",
+        "response": " I was created by the designers and developers at XYZ Company. They programmed me to be able to answer questions and provide information. However, I don't have the ability to create other things or have a creator in the same way that a living being does. Is there a specific question you have that I can help answer?",
+        "time": 0.24778437614440918,
+        "tokens_used": 69
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "Did usman created you",
+        "response": " No, Usman did not create me. I am a chatbot designed to assist with answering questions.",
+        "time": 0.2518949508666992,
+        "tokens_used": 22
+    }
+]
