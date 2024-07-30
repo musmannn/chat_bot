@@ -1,0 +1,68 @@
+[
+    {
+        "metadata": [
+            {
+                "source": "temp/MachineLearning-Lecture01.pdf",
+                "page": 5
+            }
+        ],
+        "page_content": [
+            "So all right, online resources. The class has a home page, so it's in on the handouts. I \nwon't write on the chalkboard \u2014 http:// cs229.stanford.edu. And so when there are \nhomework assignments or things like that, we  usually won't sort of \u2014 in the mission of \nsaving trees, we will usually not give out many handouts in class. So homework \nassignments, homework solutions will be posted online at the course home page. As far as this class, I've also written, a nd I guess I've also revised every year a set of \nfairly detailed lecture notes that cover the te chnical content of this  class. And so if you \nvisit the course homepage, you'll also find the detailed lecture notes that go over in detail \nall the math and equations and so on  that I'll be doing in class. There's also a newsgroup, su.class.cs229, also written on the handout."
+        ]
+    },
+    {
+        "metadata": [
+            {
+                "page": 11,
+                "source": "temp/MachineLearning-Lecture01.pdf"
+            }
+        ],
+        "page_content": [
+            "We're gonna talk about four major topics in this class, the first \nof which is supervised learning. So le t me give you an example of that."
+        ]
+    },
+    {
+        "metadata": [
+            {
+                "source": "temp/MachineLearning-Lecture01.pdf",
+                "page": 8
+            }
+        ],
+        "page_content": [
+            "That's great. I'm glad to hear this \nmachine learning stuff was actually useful. So what was it that you learned? Was it \nlogistic regression? Was it the PCA? Was it the data ne tworks? What was it that you \nlearned that was so helpful?\" And the student said, \"Oh, it was the MATLAB.\"  \nSo for those of you that don't know MATLAB yet, I hope you do learn it. It's not hard, \nand we'll actually have a short MATLAB tutori al in one of the discussion sections for \nthose of you that don't know it. Okay. The very last piece of logistical th ing is the discussion s ections. So discussion \nsections will be taught by the TAs, and atte ndance at discussion sections is optional, \nalthough they'll also be recorded and televi sed. And we'll use the discussion sections \nmainly for two things. For the next two or th ree weeks, we'll use the discussion sections \nto go over the prerequisites to this class or if some of you haven't seen probability or \nstatistics for a while or maybe algebra, we'll go over those in the discussion sections as a \nrefresher for those of you that want one. Later in this quarter, we'll also use the disc ussion sections to go over extensions for the \nmaterial that I'm teaching in the main lectur es. So machine learning is a huge field, and \nthere are a few extensions that we really want  to teach but didn't have time in the main \nlectures for. "
+        ]
+    },
+    {
+        "metadata": [
+            {
+                "page": 9,
+                "source": "temp/MachineLearning-Lecture01.pdf"
+            }
+        ],
+        "page_content": [
+            "Student : Looking at the end semester project, I mean, what exactly will you be testing \nover there? [Inaudible]? Instructor (Andrew Ng) : Of the project? Student : Yeah. Instructor (Andrew Ng) : Yeah, let me answer that later. In a couple of weeks, I shall \ngive out a handout with guidelines for the pr oject. But for now, we should think of the \ngoal as being to do a cool piec e of machine learning work that  will let you experience the "
+        ]
+    },
+    {
+        "metadata": [
+            {
+                "source": "temp/MachineLearning-Lecture01.pdf",
+                "page": 19
+            }
+        ],
+        "page_content": [
+            "You either got it right or \nwrong. In reinforcement learning problems, you are usually asked to make a sequence of \ndecisions over time. So, for example, this is something that my students and I work on. If I give you the keys \nto an autonomous helicopter \u2014 we actually ha ve this helicopter here at Stanford, \u2014 how \ndo you write a program to make it fly, ri ght? You notice that if you make a wrong \ndecision on a helicopter, the consequence of crashing it may not happen until much later. And in fact, usually you need to make a w hole sequence of bad decisions to crash a \nhelicopter. But conversely, you al so need to make a whole sequence of good decisions in \norder to fly a helic opter really well. So I'm gonna show you some fun videos of lear ning algorithms flying helicopters. This is \na video of our helicopter at Stanford flying using a contro ller that was learned using a \nreinforcement learning algorithm. So this wa s done on the Stanford football field, and \nwe'll zoom out the camera in a second. You'll sort of see th e trees planted in the sky. So \nmaybe this is one of the most difficult aer obatic maneuvers flown on any helicopter under \ncomputer control. And this controller, which is very, very hard for a human to sit down \nand write out, was learned using one of these reinforcement learning algorithms. Just a word about that: The basic idea behi nd a reinforcement learning algorithm is this \nidea of what's called a reward  function. What we have to think about is imagine you're \ntrying to train a dog. So every time y our dog does something good, you say, \"Good dog,\" \nand you reward the dog. Every time your dog does something bad, you go, \"Bad dog,\" right? And hopefully, over time, your dog will lear n to do the right things to get more of \nthe positive rewards, to get mo re of the \"Good dogs\" and to ge t fewer of the \"Bad dogs.\u201d  "
+        ]
+    },
+    {
+        "metadata": [
+            {
+                "page": 3,
+                "source": "temp/MachineLearning-Lecture01.pdf"
+            }
+        ],
+        "page_content": [
+            "The prerequisites of this class are written on one \nof the handouts, are as follows: In this class, I'm going to assume that all of you have sort \nof basic knowledge of computer science and kn owledge of the basic computer skills and \nprinciples. So I assume all of you know what big?O notation, that all of you know about \nsort of data structures like  queues, stacks, binary trees , and that all of you know enough \nprogramming skills to, like, write a simple co mputer program. And it turns out that most "
+        ]
+    }
+]

@@ -3,10 +3,11 @@ from backend import Chat
 
 """
 Todo:
-    Add the streaming functionality
-    Add the status thing like it should know what is happening
-    
-    
+  Chunking == semantic chunker
+  embedding == HuggingFaceEmbeddings(model=BTE)
+  model == mistralai/Mistral-7B-Instruct-v0.2
+  db == chroma
+
 
 """
 

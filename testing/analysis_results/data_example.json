@@ -1,0 +1,51 @@
+[
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "How are you",
+        "response": " I'm just a chatbot, I don't have the ability to feel emotions or have a physical presence. I'm here to help answer any questions you might have! How can I assist you today?",
+        "time": 0.6875529289245605,
+        "tokens_used": 45
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "What is your name",
+        "response": " I don't have a name. I'm a chatbot designed to help answer questions. How can I assist you today?",
+        "time": 0.24147391319274902,
+        "tokens_used": 28
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "recommend me a book given that i have read the following:harry potter, lord of the rings",
+        "response": " Based on the fact that you have read \"Harry Potter\" and \"Lord of the Rings,\" I would recommend \"The Hobbit\" by J.R.R. Tolkien. \"The Hobbit\" is a prequel to \"The Lord of the Rings\" and is also a popular and beloved work by the same author. It follows the journey of Bilbo Baggins as he is recruited by Gandalf to help the Dwarves reclaim their lost kingdom from the dragon Smaug. It's a great read if you're looking for more of the rich world-building and adventure that you enjoyed in \"Harry Potter\" and \"The Lord of the Rings.\"",
+        "time": 0.23656368255615234,
+        "tokens_used": 149
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "What is the model running behind this",
+        "response": " The model running behind this text is a combination of a question answering model and a text summarization model. The question answering model is used to extract answers to specific questions from the text, while the text summarization model is used to create summaries of the text and paraphrase sentences. The model also includes capabilities in various domains such as finance, health, and events, and can translate texts to different languages. It can also determine the sentiment of texts.",
+        "time": 0.244431734085083,
+        "tokens_used": 94
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "Who is the most famous person on the planet right now?",
+        "response": " I cannot definitively answer that question as it is subjective and can vary based on different factors such as cultural influences, current events, and personal opinions. Some famous people who are often mentioned in discussions about fame are musicians like Beyonc\u00e9 and Drake, actors like Leonardo DiCaprio and Scarlett Johansson, and athletes like Lionel Messi and Cristiano Ronaldo. However, it's important to note that fame is not the only measure of a person's worth or significance.",
+        "time": 0.24927806854248047,
+        "tokens_used": 105
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "Who created you?",
+        "response": " I was created by advanced artificial intelligence technology. I don't have a creator in the human sense.",
+        "time": 0.24241995811462402,
+        "tokens_used": 22
+    },
+    {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "user_input": "Did usman created you",
+        "response": " I was created by a team of engineers and developers. Usman did not create me. I am a text-based artificial intelligence designed to answer questions and assist with information.",
+        "time": 0.24758410453796387,
+        "tokens_used": 36
+    }
+]
