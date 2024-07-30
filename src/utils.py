@@ -2,6 +2,11 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings,HuggingFaceEndpoint
 import uuid
 import os
+from langchain.retrievers import EnsembleRetriever
+from langchain_community.retrievers import BM25Retriever
+from langchain.chains.query_constructor.base import AttributeInfo
+from langchain.retrievers.self_query.base import SelfQueryRetriever
+import json
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -11,15 +16,38 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 HUGGINGFACEHUB_API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')
 
+"""
+Types of retrievers we can use:
+    1)Query-Retriever
+    2)Similarity Search
+    3)BM25
+    4)
+
+"""
+
+
 
 def create_retriever(source_file,method,embedding="all-MiniLM-L6-v2",persist_dir="db/chroma/"):
     persist_dir += str(uuid.uuid4())
     loader = PyPDFLoader(source_file).load()
     embedding = HuggingFaceEmbeddings(model_name=embedding)
     docs = SemanticChunker(embedding, breakpoint_threshold_type="percentile").split_documents(loader)
+    analysis  = []
+    bm25_retriever = BM25Retriever.from_documents(documents=docs,k=3)
     # docs = RecursiveCharacterTextSplitter(chunk_size=chunk_size,chunk_overlap=chunk_overlap).split_documents(loader)
     vectorstore = Chroma.from_documents(documents=docs,embedding=embedding,persist_directory=persist_dir)
-    retriever = vectorstore.as_retriever(search_type="similarity",search_kwargs={'k':6})
+    similarity_retriever = vectorstore.as_retriever(search_type="similarity",search_kwargs={'k':3})
+    # query_retriever = SelfQueryRetriever.from_llm(
+    #     llm,
+    #     vectorstore,
+    #     document_content_description,
+    #     metadata_field_info,
+    #     verbose=True
+    # )
+    retriever = EnsembleRetriever(
+    retrievers=[bm25_retriever, similarity_retriever], weights=[0.5, 0.5]
+    )
+    # return docs
     return {'retriever':retriever,'vectordb':vectorstore,'path':persist_dir}
 
 def file_worker(file_path):
@@ -44,3 +72,15 @@ def time_it(method_name):
             return result
         return wrapper
     return decorator
+
+
+
+if __name__ == "__main__":
+    print("Hello WORLD")
+    datas =  create_retriever("docs/ml_1.pdf","semantic_chunking")
+    analysis  = []
+    for data in datas:
+        data = {'metadata':[data.metadata],'page_content':[data.page_content]}
+        analysis.append(data)
+    with open("documents.json", "w") as file:
+        json.dump(analysis, file, indent=4)

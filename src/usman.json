@@ -1,0 +1,31 @@
+[
+    {
+      "metadata": {
+        "source": "temp/MachineLearning-Lecture01.pdf",
+        "page": 12
+      },
+      "page_content": "And this sort of learning pr oblem of learning to predict hous ing prices is an example of \nwhat's called a supervised learning problem. And the reason that it's called supervised \nlearning is because we're providing the al gorithm a data set of a bunch of square \nfootages, a bunch of housing sizes, and as well as sort of the right answer of what the \nactual prices of a number  of houses were, right? So we call this supervised learning because we're supervising the algorithm or, in other \nwords, we're giving the algorithm the, quote,  right answer for a number of houses. And \nthen we want the algorithm to learn the a ssociation between the inputs and the outputs \nand to sort of give us more of the right answers, okay? It turns out this specific exam ple that I drew here is an example of something called a \nregression problem. And the term regression sort of refers to the fact that the variable \nyou're trying to predict is a continuous value and price. There's another class of supervised learning problems which we'll talk about, which are \nclassification problems. And so, in a classifi cation problem, the variab le you're trying to \npredict is discreet rather than continuous . So as one specific example — so actually a \nstandard data set you can download online [i naudible] that lots of machine learning \npeople have played with. Let's say you collect  a data set on breast cancer tumors, and you \nwant to learn the algorithm to predict wh ether or not a certai n tumor is malignant. Malignant is the opposite of benign, right, so ma lignancy is a sort of harmful, bad tumor. So we collect some number of features, some  number of properties of these tumors, and \nfor the sake of sort of having a simple [inaudi ble] explanation, let's just say that we're \ngoing to look at the size of the tumor and depe nding on the size of the tumor, we'll try to \nfigure out whether or not the tu mor is malignant or benign. So the tumor is either malignant or benign, and so  the variable in the Y axis is either zero \nor 1, and so your data set ma y look something like that, righ t? And that's 1 and that's \nzero, okay? And so this is an example of a classification problem where the variable \nyou're trying to predict is a discreet value. It 's either zero or 1. And in fact, more generally, there will be many learning problems where we'll have more \nthan one input variable, more than one input f eature and use more than one variable to try \nto predict, say, whether a tumor is malignant  or benign. So, for example, continuing with \nthis, you may instead have a data  set that looks like this."
+    },
+    {
+      "metadata": {
+        "page": 0,
+        "source": "temp/MachineLearning-Lecture01.pdf"
+      },
+      "page_content": "How "
+    },
+    {
+      "metadata": {
+        "source": "temp/MachineLearning-Lecture01.pdf",
+        "page": 18
+      },
+      "page_content": "This is a, well, th is is a second sort of different pair of \nmicrophone recordings:  \nMicrophone 1:  \nOne, two, three, four, five, six, seven, eight, nine, ten. Microphone 2:  \n[Music playing.]  Instructor (Andrew Ng): So the poor guy is not at a cocktail party. He's talking to his \nradio. There's the second recording:  \nMicrophone 1:  \nOne, two, three, four, five, six, seven, eight, nine, ten. Microphone 2:  \n[Music playing.]  \nInstructor (Andrew Ng) : Right. And we get this data. It's the same unsupervised \nlearning algorithm. The algorithm is actually called independent component analysis, and \nlater in this quarter, you'll see why. And then output's the following:  \nMicrophone 1:  \nOne, two, three, four, five, six, seven, eight, nine, ten. Instructor (Andrew Ng): And that's the second one:  \nMicrophone 2:  \n[Music playing.]  \nInstructor (Andrew Ng): Okay. So it turns out that be yond solving the cocktail party \nalgorithm, this specific cla ss of unsupervised learning algor ithms are also applied to a \nbunch of other problems, like in text proces sing or understanding f unctional grading and \nmachine data, like the magneto-encephalogram would be an EEG data. We'll talk about \nthat more when we go and describe ICA or independent component analysis algorithms, \nwhich is what you just saw."
+    },
+    {
+      "metadata": {
+        "page": 1,
+        "source": "temp/MachineLearning-Lecture01.pdf"
+      },
+      "page_content": "Yeah, okay, cool. Anyone else? Student : [Inaudible]. Instructor (Andrew Ng) : Pardon? MSNE. All ri ght. Cool. Yeah. Student : [Inaudible]. Instructor (Andrew Ng) : Pardon? Student : [Inaudible]. Instructor (Andrew Ng) : Endo —  \nStudent : [Inaudible]. Instructor (Andrew Ng) : Oh, I see, industry. Okay."
+    }
+  ]
+  
