@@ -26,7 +26,7 @@ import os
 from langchain_core.globals import set_debug,get_debug
 
 #Setting up Enviroment Variables
-api_key = os.environ['OPENAI_API_KEY']
+api_key = os.getenv('OPENAI_API_KEY')
 set_debug(False)
 load_dotenv()
 HUGGINGFACEHUB_API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')
